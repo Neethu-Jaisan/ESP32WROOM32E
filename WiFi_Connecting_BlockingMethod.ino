@@ -3,8 +3,8 @@
 #include <Arduino.h>
 #include <WiFiMulti.h>
 
-#define WIFI_SSID "ICFOSS"
-#define WIFI_PASSWORD "n0tava!lableG32!"
+#define WIFI_SSID "myWIFI" //use ur wifi name
+#define WIFI_PASSWORD "Passw0rd" //use ur wifi password
 
 WiFiMulti wifiMulti;
 
