@@ -47,7 +47,7 @@ void setup() {
         delay(1000);
         Serial.print(".");
     }
-    Serial.println("\nConnected to WiFi. IP: " + WiFi.localIP().toString());
+    Serial.println("\nConnected to WiFi. IP: " + WiFi.localIP().toString());  //Copy this IP address from serial monitor to get the webpage
 
     dht.begin();
 
