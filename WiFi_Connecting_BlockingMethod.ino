@@ -5,12 +5,12 @@
 
 #define WIFI_SSID "myWIFI" //use ur wifi name
 #define WIFI_PASSWORD "Passw0rd" //use ur wifi password
-
+int LED =23;
 WiFiMulti wifiMulti;
 
 void setup() {
   Serial.begin(921600);
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(LED, OUTPUT);
 
   wifiMulti.addAP(WIFI_SSID, WIFI_PASSWORD);
 
@@ -22,5 +22,5 @@ void setup() {
 }
   void loop()
   {
-    digitalWrite(LED_BUILTIN, WiFi.status() == WL_CONNECTED);
+    digitalWrite(LED, WiFi.status() == WL_CONNECTED);
   }
